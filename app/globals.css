@@ -1,26 +1,42 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Định nghĩa các font chữ hệ thống để đồng bộ với code Next.js */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+  
+  /* Đảm bảo các hiệu ứng Blur và Border hoạt động tốt */
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-600: #2563eb;
+  /* Bạn có thể thêm các màu khác nếu cần */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root {
+  --background: #f8faff; /* Màu nền xanh nhạt như hình mẫu */
+  --foreground: #0f172a;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #020617;
+    --foreground: #f8fafc;
   }
 }
 
+/* QUAN TRỌNG: 
+   Xóa font-family Arial cứng để Tailwind có thể điều khiển font qua các class 
+*/
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lớp hỗ trợ cho hiệu ứng cuộn mượt mà */
+html {
+  scroll-behavior: smooth;
 }
