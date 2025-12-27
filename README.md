@@ -28,6 +28,7 @@ Dự án Portfolio này được xây dựng dựa trên các công nghệ hiệ
 
 ## ✨ Tính năng nổi bật
 
+<<<<<<< HEAD
 - [x] **Responsive Design:** Hiển thị hoàn hảo trên mọi thiết bị (Mobile, Tablet, Desktop).
 - [x] **Dark/Light Mode:** Giao diện hiện đại, dễ nhìn.
 - [x] **Smooth Scrolling:** Hiệu ứng cuộn trang mượt mà bằng Framer Motion.
@@ -42,3 +43,17 @@ Nếu bạn muốn tham khảo hoặc phát triển thêm từ dự án này, h�
 1. **Clone repository:**
    ```bash
    git clone [https://github.com/trungtin10/trungtindev.git](https://github.com/trungtin10/trungtindev.git)
+=======
+      {/* FOOTER */}
+      <footer className="w-full max-w-6xl mx-auto px-8 py-20 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-10">
+        <p className="text-slate-400 text-[10px] font-mono tracking-[0.4em] uppercase font-bold text-center">
+            © {new Date().getFullYear()} / TRUNG TIN PORTFOLIO
+        </p>
+        <div className="flex gap-12 font-black text-[10px] tracking-widest uppercase text-slate-400">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">Github</a>
+        </div>
+      </footer>
+    </div>
+  );
+}
+>>>>>>> a47561799a63a2d91f08c43c1810aef9b00f6eb5
